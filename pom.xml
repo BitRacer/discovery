@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<docker.registry>hub.docker.io:5000/</docker.registry>
 	</properties>
 
 	<dependencies>
@@ -73,6 +74,7 @@
 		             <include>${project.build.finalName}.jar</include>
 		           </resource>
 		        </resources>
+		        <pushImage>true</pushImage>
 		      </configuration>
 		    </plugin>		
 		</plugins>
