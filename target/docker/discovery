@@ -1,5 +1,0 @@
-FROM java:8
-VOLUME /tmp
-ADD discovery-0.0.1-SNAPSHOT.jar discovery.jar
-RUN bash -c 'touch /discovery.jar'
-ENTRYPOINT ["java","-Dspring.profiles.active=default","-Djava.security.egd=file:/dev/./urandom","-jar","/discovery.jar"]
