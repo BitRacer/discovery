@@ -7,7 +7,7 @@ eureka:
     hostname: discovery1
   client:
     serviceUrl:
-      defaultZone: http://discovery2:8761/eureka/
+      defaultZone: http://discovery2/eureka/
 
 ---
 spring:
@@ -17,7 +17,7 @@ eureka:
     hostname: discovery2
   client:
     serviceUrl:
-      defaultZone: http://discovery1:8761/eureka/
+      defaultZone: http://discovery1/eureka/
       
 ---
 spring:
